@@ -1,0 +1,50 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><style>body{margin:0;padding:32px;background:#f4f5f6;font-family:"Microsoft YaHei",sans-serif}article{max-width:1200px;background:white;padding:32px;border:1px solid #ddd}h1{font-size:25px;margin:0 0 10px}p{font-size:15px;color:#555}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:Consolas,"Microsoft YaHei",monospace;font-size:18px;line-height:1.55}</style><article><h1>任务四 实际索引与explain结果</h1><p>数科三班 · 詹晗宇 · 202414870326 ｜ 2026-10-15<br>真实执行日志展示页；未模拟终端界面。原始记录见操作记录目录。</p><pre>[
+  {
+    &quot;v&quot;: 2,
+    &quot;key&quot;: {
+      &quot;_id&quot;: 1
+    },
+    &quot;name&quot;: &quot;_id_&quot;
+  },
+  {
+    &quot;v&quot;: 2,
+    &quot;key&quot;: {
+      &quot;isbn&quot;: 1
+    },
+    &quot;name&quot;: &quot;isbn_1&quot;,
+    &quot;unique&quot;: true
+  },
+  {
+    &quot;v&quot;: 2,
+    &quot;key&quot;: {
+      &quot;title&quot;: 1
+    },
+    &quot;name&quot;: &quot;title_1&quot;
+  },
+  {
+    &quot;v&quot;: 2,
+    &quot;key&quot;: {
+      &quot;category&quot;: 1
+    },
+    &quot;name&quot;: &quot;category_1&quot;
+  },
+  {
+    &quot;v&quot;: 2,
+    &quot;key&quot;: {
+      &quot;tags&quot;: 1
+    },
+    &quot;name&quot;: &quot;tags_1&quot;
+  },
+  {
+    &quot;v&quot;: 2,
+    &quot;key&quot;: {
+      &quot;category&quot;: 1,
+      &quot;price&quot;: 1
+    },
+    &quot;name&quot;: &quot;category_1_price_1&quot;
+  }
+]
+
+无索引扫描: {&quot;nReturned&quot;: 1, &quot;executionTimeMillis&quot;: 0, &quot;totalKeysExamined&quot;: 0, &quot;totalDocsExamined&quot;: 20}
+唯一索引扫描: {&quot;nReturned&quot;: 1, &quot;executionTimeMillis&quot;: 0, &quot;totalKeysExamined&quot;: 1, &quot;totalDocsExamined&quot;: 1}
+重复ISBN验证：E11000 duplicate key error</pre></article></html>

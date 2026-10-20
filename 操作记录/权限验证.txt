@@ -1,0 +1,9 @@
+MongoDB 8.0.16 / 127.0.0.1:27017 / --auth
+libReader roles=[{"role": "read", "db": "library"}]
+libReader read books count=20
+libReader WRITE DENIED code=13 not authorized on library to execute command { insert: "books", ordered: true, lsid: { id: UUID("b108c836-4ce8-479e-b465-0b41e4aa1aca") }, $db: "library" }
+libWriter roles=[{"role": "dbAdmin", "db": "library"}, {"role": "readWrite", "db": "library"}]
+libWriter read books count=20
+libWriter WRITE SUCCESS inserted=1
+libWriter cleanup deleted=1
+anonymous READ DENIED code=13

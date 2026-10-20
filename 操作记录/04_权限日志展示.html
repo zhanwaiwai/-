@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><style>body{margin:0;padding:32px;background:#f4f5f6;font-family:"Microsoft YaHei",sans-serif}article{max-width:1200px;background:white;padding:32px;border:1px solid #ddd}h1{font-size:25px;margin:0 0 10px}p{font-size:15px;color:#555}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:Consolas,"Microsoft YaHei",monospace;font-size:18px;line-height:1.55}</style><article><h1>任务四 启用访问控制后的实际权限验证</h1><p>数科三班 · 詹晗宇 · 202414870326 ｜ 2026-10-15<br>真实执行日志展示页；未模拟终端界面。原始记录见操作记录目录。</p><pre>MongoDB 8.0.16 / 127.0.0.1:27017 / --auth
+libReader roles=[{&quot;role&quot;: &quot;read&quot;, &quot;db&quot;: &quot;library&quot;}]
+libReader read books count=20
+libReader WRITE DENIED code=13 not authorized on library to execute command { insert: &quot;books&quot;, ordered: true, lsid: { id: UUID(&quot;b108c836-4ce8-479e-b465-0b41e4aa1aca&quot;) }, $db: &quot;library&quot; }
+libWriter roles=[{&quot;role&quot;: &quot;dbAdmin&quot;, &quot;db&quot;: &quot;library&quot;}, {&quot;role&quot;: &quot;readWrite&quot;, &quot;db&quot;: &quot;library&quot;}]
+libWriter read books count=20
+libWriter WRITE SUCCESS inserted=1
+libWriter cleanup deleted=1
+anonymous READ DENIED code=13</pre></article></html>

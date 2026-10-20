@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><style>body{margin:0;padding:32px;background:#f4f5f6;font-family:"Microsoft YaHei",sans-serif}article{max-width:1200px;background:white;padding:32px;border:1px solid #ddd}h1{font-size:25px;margin:0 0 10px}p{font-size:15px;color:#555}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:Consolas,"Microsoft YaHei",monospace;font-size:18px;line-height:1.55}</style><article><h1>任务一 MongoDB真实启动日志</h1><p>数科三班 · 詹晗宇 · 202414870326 ｜ 2026-10-15<br>真实执行日志展示页；未模拟终端界面。原始记录见操作记录目录。</p><pre>{
+  &quot;t&quot;: {
+    &quot;$date&quot;: &quot;2026-10-15T19:48:09.060+08:00&quot;
+  },
+  &quot;s&quot;: &quot;I&quot;,
+  &quot;c&quot;: &quot;CONTROL&quot;,
+  &quot;id&quot;: 4615611,
+  &quot;ctx&quot;: &quot;initandlisten&quot;,
+  &quot;msg&quot;: &quot;MongoDB starting&quot;,
+  &quot;attr&quot;: {
+    &quot;pid&quot;: 17168,
+    &quot;port&quot;: 27017,
+    &quot;dbPath&quot;: &quot;D:/codex/2026-10-15/ml-r-3-knn-reg-202414870326/work/db&quot;,
+    &quot;architecture&quot;: &quot;64-bit&quot;,
+    &quot;host&quot;: &quot;LAPTOP-I82PDPG6&quot;
+  }
+}
+{
+  &quot;t&quot;: {
+    &quot;$date&quot;: &quot;2026-10-15T19:48:09.060+08:00&quot;
+  },
+  &quot;s&quot;: &quot;I&quot;,
+  &quot;c&quot;: &quot;CONTROL&quot;,
+  &quot;id&quot;: 23403,
+  &quot;ctx&quot;: &quot;initandlisten&quot;,
+  &quot;msg&quot;: &quot;Build Info&quot;,
+  &quot;attr&quot;: {
+    &quot;buildInfo&quot;: {
+      &quot;version&quot;: &quot;8.0.16&quot;,
+      &quot;gitVersion&quot;: &quot;ba70b6a13fda907977110bf46e6c8137f5de48f6&quot;,
+      &quot;modules&quot;: [],
+      &quot;allocator&quot;: &quot;tcmalloc-gperf&quot;,
+      &quot;environment&quot;: {
+        &quot;distmod&quot;: &quot;windows&quot;
+      }
+    }
+  }
+}
+{
+  &quot;t&quot;: {
+    &quot;$date&quot;: &quot;2026-10-15T19:48:09.060+08:00&quot;
+  },
+  &quot;s&quot;: &quot;I&quot;,
+  &quot;c&quot;: &quot;CONTROL&quot;,
+  &quot;id&quot;: 21951,
+  &quot;ctx&quot;: &quot;initandlisten&quot;,
+  &quot;msg&quot;: &quot;Options set by command line&quot;,
+  &quot;attr&quot;: {
+    &quot;options&quot;: {
+      &quot;net&quot;: {
+        &quot;bindIp&quot;: &quot;127.0.0.1&quot;,
+        &quot;port&quot;: 27017
+      },
+      &quot;setParameter&quot;: {
+        &quot;ttlMonitorEnabled&quot;: &quot;false&quot;
+      },
+      &quot;storage&quot;: {
+        &quot;dbPath&quot;: &quot;D:/codex/2026-10-15/ml-r-3-knn-reg-202414870326/work/db&quot;
+      },
+      &quot;systemLog&quot;: {
+        &quot;destination&quot;: &quot;file&quot;,
+        &quot;path&quot;: &quot;D:/codex/2026-10-15/ml-r-3-knn-reg-202414870326/work/mongod.log&quot;
+      }
+    }
+  }
+}
+{
+  &quot;t&quot;: {
+    &quot;$date&quot;: &quot;2026-10-15T19:48:09.736+08:00&quot;
+  },
+  &quot;s&quot;: &quot;I&quot;,
+  &quot;c&quot;: &quot;NETWORK&quot;,
+  &quot;id&quot;: 23016,
+  &quot;ctx&quot;: &quot;listener&quot;,
+  &quot;msg&quot;: &quot;Waiting for connections&quot;,
+  &quot;attr&quot;: {
+    &quot;port&quot;: 27017,
+    &quot;ssl&quot;: &quot;off&quot;
+  }
+}
+{
+  &quot;t&quot;: {
+    &quot;$date&quot;: &quot;2026-10-15T19:48:09.736+08:00&quot;
+  },
+  &quot;s&quot;: &quot;I&quot;,
+  &quot;c&quot;: &quot;CONTROL&quot;,
+  &quot;id&quot;: 8423403,
+  &quot;ctx&quot;: &quot;initandlisten&quot;,
+  &quot;msg&quot;: &quot;mongod startup complete&quot;,
+  &quot;attr&quot;: {
+    &quot;Summary of time elapsed&quot;: {
+      &quot;Startup from clean shutdown?&quot;: true,
+      &quot;Statistics&quot;: {
+        &quot;Set up periodic runner&quot;: &quot;0 ms&quot;,
+        &quot;Set up online certificate status protocol manager&quot;: &quot;0 ms&quot;,
+        &quot;Transport layer setup&quot;: &quot;0 ms&quot;,
+        &quot;Run initial syncer crash recovery&quot;: &quot;0 ms&quot;,
+        &quot;Create storage engine lock file in the data directory&quot;: &quot;1 ms&quot;,
+        &quot;Get metadata describing storage engine&quot;: &quot;0 ms&quot;,
+        &quot;Create storage engine&quot;: &quot;63 ms&quot;,
+        &quot;Write current PID to file&quot;: &quot;0 ms&quot;,
+        &quot;Write a new metadata for storage engine&quot;: &quot;0 ms&quot;,
+        &quot;Initialize FCV before rebuilding indexes&quot;: &quot;0 ms&quot;,
+        &quot;Drop abandoned idents and get back indexes that need to be rebuilt or builds that need to be restarted&quot;: &quot;0 ms&quot;,
+        &quot;Rebuild indexes for collections&quot;: &quot;0 ms&quot;,
+        &quot;Load cluster parameters from disk for a standalone&quot;: &quot;1 ms&quot;,
+        &quot;Build user and roles graph&quot;: &quot;0 ms&quot;,
+        &quot;Set up the background thread pool responsible for waiting for opTimes to be majority committed&quot;: &quot;0 ms&quot;,
+        &quot;Start up the replication coordinator&quot;: &quot;0 ms&quot;,
+        &quot;Ensure the change stream collections on startup contain consistent data&quot;: &quot;0 ms&quot;,
+        &quot;Write startup options to the audit log&quot;: &quot;0 ms&quot;,
+        &quot;Start transport layer&quot;: &quot;0 ms&quot;,
+        &quot;_initAndListen total elapsed time&quot;: &quot;676 ms&quot;
+      }
+    }
+  }
+}</pre></article></html>

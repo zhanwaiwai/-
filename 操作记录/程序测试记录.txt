@@ -1,0 +1,13 @@
+PASS 新增与检索
+PASS 负库存保护
+PASS 库存调整
+PASS 无结果与分页
+PASS 评分排行
+PASS 学院与等级统计
+PASS 借阅扣库存
+PASS 归还加库存
+PASS 重复归还幂等
+PASS 统计聚合
+PASS 读者删除
+PASS 图书删除
+PASS 批量插入和删除
